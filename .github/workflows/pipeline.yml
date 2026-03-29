@@ -1,4 +1,5 @@
-: Week Wellness Tourism MLS pipeline
+
+: Tourism
 
 on:
   push:
@@ -54,7 +55,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install Dependencies
-        run: pip install -r tourism_project/requirements.txt
+        run: pip install -r week_3_mls/requirements.txt
       - name: Push files to Frontend Hugging Face Space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
