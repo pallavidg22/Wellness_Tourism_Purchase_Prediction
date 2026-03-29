@@ -19,7 +19,7 @@ jobs:
         run: python tourism_project/model_building/data_register.py
 
   data-prep:
-    needs: register-datasetname
+    needs: register-dataset
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
